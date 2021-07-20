@@ -1,29 +1,17 @@
-(function() {
-  function $(id) {
-    return document.getElementById(id);
+var profile = document.getElementById("pop-up");
+var btn = document.getElementById("buy");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  profile.style.display = "block";
+}
+
+span.onclick = function() {
+  profile.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == profile) {
+    profile.style.display = "none";
   }
-
-  var card = $('card'),
-      openB = $('open'),
-      closeB = $('close'),
-      timer = null;
-  console.log('wat', card);
-  openB.addEventListener('click', function () {
-    card.setAttribute('class', 'open-half');
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(function () {
-      card.setAttribute('class', 'open-fully');
-      timer = null;
-    }, 1000);
-  });
-
-  closeB.addEventListener('click', function () {
-    card.setAttribute('class', 'close-half');
-    if (timer) clearTimerout(timer);
-    timer = setTimeout(function () {
-      card.setAttribute('class', '');
-      timer = null;
-    }, 1000);
-  });
-
-}());
+}
