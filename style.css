@@ -1,235 +1,38 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./font/Montserrat-Light.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
 
 * {
+    background: #1b242f;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-header .logo {
-    max-width: 60px;
-}
-
-body {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: whitesmoke;
+    overflow: hidden;
 }
 
 nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 200px;
+}
+.logo {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    float: left;
 }
 
-nav ul {
-    position: relative;
-    display: flex;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    display: inline-block;
-    color: #333;
-    font-weight: 400;
-    margin-left: 40px;
-    text-decoration: none;
-}
-
-main {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main #nemeziz {
-    width: 600px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
-}
-
-main #nemeziz img {
-    max-width: 340px;
-}
-
-main #content {
-    position: relative;
-    max-width: 600px;
-}
-
-main #content #h1 {
-    color: #333;
-    font-size: 4em;
-    line-height: 1.4em;
-    font-weight: 500;
-}
-
-main #content article {
-    color: #333;
-}
-
-main #content #click {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: #017143;
-    color: #fff;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-#contact-us {
-    background: #017143;
-    color: whitesmoke;
-    border-radius: 40px;
-    padding: 3px 20px;
-    margin-top: -3px;
-}
-
-.profile {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 500px;
-    width: 100%;
-    height: 100%;
-  }
-  
-.inside {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    align-items: center;
-    transition: 0.3s;
-  }
-
-.biodata p {
-    text-align: center;
-    line-height: 20px;
-    margin-bottom: 10px;
-}
-.close {
-    color: #aaaaaa;
+.navigation {
     float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-.close:hover, .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-.profile-img {
-    margin: auto;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
-.profile-img img {
-    width: 150px;
-    margin: auto;
+.navigation ul {
+    
     display: flex;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
+    padding-left: 10px;
+}
 
-.footer {
+.navigation ul li {
+    list-style: none;
     display: flex;
-    position: absolute;
-    left: 36%;
-    bottom: 10px;
-}
-
-.footer p {
-    text-align: center;
-}
-
-@media (max-width: 992px) {
-    nav {
-        padding: 20px;
-    }
-
-    nav .logo {
-        max-width: 60px;
-    }
-
-    body {
-        padding: 20px 20px 120px;
-    }
-
-    main {
-        flex-direction: column;
-        margin-top: 100px;
-    }
-
-    main #content {
-        max-width: 100%;
-    }
-
-    main #content #h1 {
-        font-size: 2.5em;
-        margin-bottom: 15px;
-    }
-
-    main #product-image {
-        max-width: 100%;
-        justify-content: center;
-    }
-
-    main #product-image img {
-        max-width: 250px;
-    }
-
-    .footer {
-        display: flex;
-        position: absolute;
-        left: 10%;
-        bottom: -350px;
-    }
-
-    nav ul {
-        max-width: 100%;
-    }
-
-    .inside {
-        width: 50%;
-    }
-
-    .profile-img img {
-        margin: 10px 45px 30px;
-    }
-}
-
-@media (max-width: 640px) {
-    .inside {
-        width: 70%;
-    }
+    font-weight: 100;
+    padding-left: 10px;
 }
