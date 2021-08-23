@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
 	background: #1b242f;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: whitesmoke;
 	margin: 0;
 	overflow: hidden;
@@ -34,7 +34,7 @@ header {
 .navigation ul li {
 	list-style: none;
 	display: flex;
-	font-weight: 100;
+	font-weight: 400;
 	font-size: 18px;
 	padding-left: 30px;
 }
