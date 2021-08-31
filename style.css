@@ -1,54 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
-	background: #1b242f;
-	font-family: "Montserrat", sans-serif;
-	color: whitesmoke;
 	margin: 0;
-	overflow: hidden;
-	box-sizing: border-box;
+	padding: 0;
 }
 
 header {
-	padding: 10px;
-}
-.logo {
-	padding-left: 20px;
-	padding-top: 20px;
-	font-size: 18px;
-	float: left;
-	font-size: 20px;
-}
-
-.navigation {
-	float: right;
-	padding-right: 20px;
-	padding-top: 20px;
-}
-
-.navigation ul {
 	display: flex;
-	padding-left: 10px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0px;
 }
 
-.navigation ul li {
+header ul {
 	list-style: none;
 	display: flex;
-	font-weight: 400;
-	font-size: 18px;
-	padding-left: 30px;
+	width: 35%;
+	justify-content: space-between;
+	align-items: center;
 }
 
-@media (max-width: 480px) {
-	header {
-		padding: 0;
+body {
+	font-family: "Montserrat", sans-serif;
+	background: rgb(8, 8, 61);
+	color: whitesmoke;
+}
+
+header ul li {
+	display: flex;
+	justify-content: space-between;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.hamburger {
+	display: none;
+	background-color: transparent;
+	font-size: 16px;
+	border: 0;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+	header ul {
+		width: 50%;
 	}
-	header h1 {
-		font-size: 24px;
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+	header ul {
+		margin-top: 10px;
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		height: 150px;
 	}
-	.navigation ul li {
-		font-size: 10px;
-		padding-top: 10px;
-		padding-left: 5px;
+
+	.hamburger {
+		display: block;
+	}
+
+	.nav-ul.show {
+		display: flex;
 	}
 }
