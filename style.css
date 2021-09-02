@@ -3,6 +3,13 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background: #f1faee;
+	color: #1d3557;
 }
 
 header {
@@ -10,38 +17,35 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	padding: 10px 0px;
+	padding: 20px 0px;
 }
 
 header ul {
 	list-style: none;
 	display: flex;
 	width: 35%;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-}
-
-body {
-	font-family: "Montserrat", sans-serif;
-	background: rgb(8, 8, 61);
-	color: whitesmoke;
+	align-content: center;
 }
 
 header ul li {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 header ul li:hover {
-	padding: 10px 10px;
-	margin: 0 -10px;
-	background-color: black;
+	padding: 10px 0px;
+	background-color: #a8dadc;
 	border-radius: 5px;
 }
 
 header ul li a {
+	display: flex;
+	align-items: center;
 	text-decoration: none;
-	color: whitesmoke;
+	color: #1d3557;
+	margin: 0px 20px;
 }
 
 .hamburger {
@@ -49,7 +53,7 @@ header ul li a {
 	background-color: transparent;
 	font-size: 16px;
 	border: 0;
-	color: whitesmoke;
+	color: #1d3557;
 	cursor: pointer;
 }
 
@@ -67,18 +71,26 @@ header ul li a {
 		display: none;
 		width: 100%;
 		flex-direction: column;
-		height: 150px;
+		height: 200px;
 	}
 
 	.hamburger {
 		display: block;
 		padding: 10px 10px;
-		background-color: black;
 		border-radius: 5px;
 	}
 
 	.nav-ul.show {
 		display: flex;
-		transition: all 1s ease-out;
+		margin-top: 20px;
+	}
+
+	header ul li a {
+		margin: 10px 0px;
+	}
+	header ul li:hover {
+		padding: 0px 10px;
+		background-color: #a8dadc;
+		border-radius: 5px;
 	}
 }
