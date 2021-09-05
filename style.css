@@ -133,12 +133,12 @@ body {
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 50px;
+	padding: 2em 1.5em;
 }
 .logo {
 	font-family: "Montserrat", sans-serif;
 	color: #333d29;
-	font-size: 48px;
+	font-size: 3em;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -157,6 +157,7 @@ nav {
 a {
 	text-decoration: none;
 	color: #582f0e;
+	font-size: 1em;
 }
 
 .nav-ul {
@@ -197,6 +198,11 @@ a.contact:hover {
 }
 
 @media (max-width: 768px) {
+	.logo,
+	a {
+		font-size: 1em;
+	}
+
 	.nav-list {
 		display: none;
 	}
