@@ -5,7 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Setyo F P | Front End Web Developer</title>
-		<link rel="shortcut icon" href="./assets/img/react.png" type="image/png" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/react.png"
+			type="image/png"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +26,8 @@
 			<ul>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Education</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><button>Contact</button></li>
 			</ul>
 			<div class="menu-toggle">
 				<input type="checkbox" name="" id="" />
@@ -32,6 +36,184 @@
 				<span></span>
 			</div>
 		</nav>
+		<section class="title">
+			<div class="description">
+				<h3>Hi, I am</h3>
+				<div class="name">
+					<h1><strong>Setyo</strong> Fajar</h1>
+					<p>Front-end Web Developer</p>
+				</div>
+				<div class="social-account">
+					<div class="social-logo">
+						<a
+							href="mailto: setyofajar@gmail.com"
+							target="_blank"
+							title="email"
+						>
+							<img
+								class="social-img"
+								src="./assets/img/icons8-gmail-24.png"
+								alt="email"
+							/>
+						</a>
+					</div>
+					<div class="social-logo">
+						<a
+							href="https://github.com/setyofp"
+							target="_blank"
+							title="github"
+						>
+							<img
+								class="social-img"
+								src="./assets/img/icons8-github-24.png"
+								alt="github"
+							/>
+						</a>
+					</div>
+					<div class="social-logo">
+						<a
+							href="https://www.linkedin.com/in/setyofajar/"
+							target="_blank"
+							title="linkedin"
+						>
+							<img
+								class="social-img"
+								src="./assets/img/icons8-linkedin-24.png"
+								alt="linkedin"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<section class="img">
+				<div class="img-wrap">
+					<img src="./assets/img/profile-picture.png" alt="" />
+				</div>
+			</section>
+			<div class="background-img"></div>
+		</section>
+		<div class="separator"></div>
+		<section class="about">
+			<div class="section-title-about">
+				<h1>About</h1>
+			</div>
+			<div class="about-paragraph">
+				<p>
+					Front-End Web Developer with many bootcamp experiences such
+					as Digital Talent Scholarship (Digitalent) by Ministry of
+					Communication and Information Technology, Cloud and Back-End
+					Developer Scholarship Program by AWS, and Indosat Ooredoo
+					Digital Camp (IDCamp) by Indosat. Specialize in JavaScript
+					and have experience using ReactJS library. Have basic
+					understanding about server-side and cloud development. Take
+					a look at my work or get in touch!
+				</p>
+			</div>
+		</section>
+
+		<section class="education">
+			<div class="section-title">
+				<h1>EDUCATION</h1>
+			</div>
+			<div class="education-wrapper">
+				<div class="history-tl-container">
+					<div class="education-logo">
+						<img
+							src="./assets/img/icons8-education-48.png"
+							alt="education"
+							style="width: 24px"
+						/>
+					</div>
+					<ul class="tl">
+						<li
+							class="tl-item"
+							ng-repeat="item in retailer_history"
+						>
+							<div class="timestamp">
+								present -<br />
+								2017
+							</div>
+							<div class="item-title">Brawijaya University</div>
+							<div class="item-detail">
+								Electrical Engineering
+							</div>
+						</li>
+
+						<li
+							class="tl-item"
+							ng-repeat="item in retailer_history"
+						>
+							<div class="timestamp">
+								2016<br />
+								- <br />
+								2013
+							</div>
+							<div class="item-title">SMAN 8 Bekasi</div>
+							<div class="item-detail">Natural Science</div>
+						</li>
+					</ul>
+				</div>
+				<div class="history-tl-container">
+					<div class="education-logo">
+						<img
+							src="./assets/img/icons8-code-24.png"
+							alt="education"
+						/>
+					</div>
+					<ul class="tl">
+						<li
+							class="tl-item"
+							ng-repeat="item in retailer_history"
+						>
+							<div class="timestamp">
+								7th May -<br />
+								28th Jul 2021
+							</div>
+							<div class="item-title">
+								Indosat Ooredoo Digital Camp
+							</div>
+							<div class="item-detail">
+								Front-End Web Developer - Dicoding
+							</div>
+						</li>
+						<li
+							class="tl-item"
+							ng-repeat="item in retailer_history"
+						>
+							<div class="timestamp">
+								31st May -<br />
+								9th Jul 2021
+							</div>
+							<div class="item-title">
+								Digital Talent Scholarship (Digitalent)
+							</div>
+							<div class="item-detail">
+								Intro to Full Stack Developer - Progate
+							</div>
+						</li>
+						<li
+							class="tl-item"
+							ng-repeat="item in retailer_history"
+						>
+							<div class="timestamp">
+								15th Mar -<br />
+								10th Jun 2021
+							</div>
+							<div class="item-title">
+								Cloud and Back-End Developer
+								<br />
+								Scholarship Program
+							</div>
+							<div class="item-detail">
+								Cloud Practitioner Essentials <br />
+								Architecting on AWS
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<script src="script.js"></script>
 	</body>
 </html>

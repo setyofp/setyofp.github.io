@@ -5,24 +5,24 @@
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
-	background-color: #fefae0;
+	background-color: #fff;
 }
 
 nav {
 	display: flex;
-	background-color: #b6ad90;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 30px;
+	padding: 20px 15vw;
 	color: #582f0e;
 	text-transform: uppercase;
 }
 
 nav .logo {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 3px;
+	color: #000;
 }
 
 nav ul {
@@ -30,6 +30,7 @@ nav ul {
 	list-style: none;
 	width: 40%;
 	justify-content: space-between;
+	align-items: center;
 }
 
 nav ul li a {
@@ -94,6 +95,222 @@ nav ul li a:hover {
 	transform: scale(0);
 }
 
+button {
+	border-radius: 4px;
+	background-color: #000;
+	border: none;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 8px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.title {
+	display: flex;
+	flex-flow: row wrap-reverse;
+	justify-content: flex-start;
+	position: relative;
+	padding: 0 15vw;
+	height: 500px;
+}
+
+.background-img {
+	background-color: #d7d7d7;
+	width: 1000px;
+	height: 1000px;
+	position: absolute;
+	top: -400px;
+	left: -350px;
+	z-index: -1;
+	transform: rotate(10deg);
+}
+
+.description {
+	width: 350px;
+	margin-right: 8em;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	height: 250px;
+	align-self: center;
+	color: #000;
+}
+
+.description h3 {
+	font-size: 24px;
+}
+
+.description h1 {
+	font-size: 48px;
+	margin-bottom: 4px;
+}
+
+.description p {
+	text-align: justify;
+	line-height: 1.5;
+	margin-bottom: 24px;
+}
+
+.social-account {
+	display: flex;
+	gap: 20px;
+}
+
+.social-logo {
+	background-color: #a7a7a7;
+	padding: 4px;
+	border-radius: 8px;
+	box-shadow: 1.4px 1.4px 2.3px rgba(0, 0, 0, 0.087),
+		3.8px 3.8px 6.3px rgba(0, 0, 0, 0.125),
+		9px 9px 15.1px rgba(0, 0, 0, 0.163), 30px 30px 50px rgba(0, 0, 0, 0.25);
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img img {
+	border-radius: 16px;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.section-title-about {
+	position: relative;
+	padding: 0 0 20px;
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.section-title-about h1 {
+	font-size: 24px;
+}
+
+.about {
+	display: flex;
+	justify-content: center;
+	min-height: 200px;
+	gap: 60px;
+	background-color: rgba(15, 15, 15, 0.9);
+	color: #fff;
+	padding: 20px 15vw;
+	margin-bottom: 40px;
+}
+
+.about p {
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.section-title-about::before {
+	height: 40px;
+	width: 2px;
+	content: '';
+	position: absolute;
+	right: -40px;
+	top: 5px;
+	background-color: rgb(239, 75, 108);
+	transform: translateX(-50%);
+}
+
+.section-title {
+	position: relative;
+	padding: 0 0 20px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.section-title:before {
+	width: 40px;
+	height: 2px;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	background-color: #ef4b6c;
+	transform: translateX(-50%);
+}
+
+.education {
+	min-height: 600px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.education-logo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.education-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.education-logo {
+	margin: 16px auto;
+	width: fit-content;
+}
+
+.history-tl-container {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	position: relative;
+}
+.history-tl-container ul.tl {
+	margin: 20px 0;
+	padding: 0;
+	display: inline-block;
+}
+.history-tl-container ul.tl li {
+	list-style: none;
+	margin: auto;
+	min-width: 300px;
+	margin-left: 200px;
+	min-height: 50px;
+	/*background: rgba(255,255,0,0.1);*/
+	border-left: 1px dashed #86d6ff;
+	padding: 0 0 50px 30px;
+	position: relative;
+}
+.history-tl-container ul.tl li:last-child {
+	border-left: 0;
+}
+.history-tl-container ul.tl li::before {
+	position: absolute;
+	left: -18px;
+	top: -5px;
+	content: ' ';
+	border: 8px solid rgba(255, 255, 255, 0.74);
+	border-radius: 500%;
+	background: #258cc7;
+	height: 20px;
+	width: 20px;
+	transition: all 500ms ease-in-out;
+}
+.history-tl-container ul.tl li:hover::before {
+	border-color: #258cc7;
+	transition: all 1000ms ease-in-out;
+}
+
+ul.tl li .item-detail {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+}
+ul.tl li .timestamp {
+	color: #8d8d8d;
+	position: absolute;
+	width: 100px;
+	left: -50%;
+	text-align: right;
+	font-size: 12px;
+}
 /* Responsive */
 
 /* Tablet */
