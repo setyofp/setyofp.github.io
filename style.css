@@ -278,6 +278,7 @@ button {
 	border-left: 1px dashed #86d6ff;
 	padding: 0 0 50px 30px;
 	position: relative;
+	display: flex;
 }
 .history-tl-container ul.tl li:last-child {
 	border-left: 0;
@@ -346,5 +347,29 @@ ul.tl li .timestamp {
 
 	.menu-toggle {
 		display: flex;
+	}
+
+	.img {
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.img img {
+		height: 200px;
+	}
+
+	.description {
+		margin-right: 0;
+		align-items: center;
+		height: 200px;
+	}
+
+	.description h1 {
+		font-size: 36px;
+	}
+
+	.description p {
+		text-align: center;
 	}
 }
