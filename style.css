@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
 
+/* CSS Variable */
+:root {
+	--bg: #dcdde1;
+	--color-icon: #535c68;
+	--social-icon1: #e4405f;
+	--social-icon2: #000;
+	--social-icon3: #0077b5;
+}
+
+/* CSS Reset */
 * {
 	margin: 0;
 	padding: 0;
@@ -9,6 +19,7 @@
 html {
 	font-family: 'Montserrat', sans-serif;
 	color: #121212;
+	scroll-behavior: smooth;
 }
 
 li {
@@ -24,6 +35,7 @@ button {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* Header */
 .header {
 	border-bottom: 1px solid #d7d7d7;
 	text-transform: uppercase;
@@ -85,6 +97,7 @@ button.nav-link:hover {
 	color: #fff;
 }
 
+/* Hero Section */
 .hero {
 	display: flex;
 	justify-content: space-between;
@@ -92,6 +105,7 @@ button.nav-link:hover {
 	align-items: center;
 	padding: 1rem 10rem;
 	height: 400px;
+	margin-bottom: 6rem;
 }
 
 .hero > * {
@@ -113,6 +127,69 @@ button.nav-link:hover {
 	gap: 1rem;
 }
 
+/* Social Link */
+.icon-list {
+	display: flex;
+	gap: 1rem;
+}
+
+.icon-item {
+	list-style: none;
+}
+
+.icon-link {
+	display: inline-flex;
+	font-size: 2rem;
+	text-decoration: none;
+	color: var(--color-icon);
+	width: 3rem;
+	height: 3rem;
+	transition: 0.5s linear;
+	position: relative;
+	z-index: 1;
+	margin: auto;
+}
+
+.icon-link:hover {
+	color: #fff;
+}
+
+.icon-link i {
+	margin: auto;
+}
+
+.icon-link::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #000;
+	border-radius: 50%;
+	z-index: -1;
+	transform: scale(0);
+	transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
+}
+
+.icon-link:hover::before {
+	transform: scale(1);
+}
+
+.icon-item:nth-child(1) a:hover:before {
+	background: var(--social-icon1);
+}
+
+.icon-item:nth-child(2) a:hover:before {
+	background: var(--social-icon2);
+}
+
+.icon-item:nth-child(3) a:hover:before {
+	background: var(--social-icon3);
+}
+
 .social-logo {
 	background-color: #d7d7d7;
 	padding: 0.5rem;
@@ -122,6 +199,110 @@ button.nav-link:hover {
 img.hero-img {
 	max-width: 400px;
 	border-radius: 1rem;
+}
+
+/* Education Section */
+.education {
+	padding: 3rem 10rem;
+	background-color: #d7d7d7;
+	height: fit-content;
+	border-radius: 3rem;
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 4rem;
+}
+
+.education-container {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	align-items: center;
+	gap: 1rem;
+}
+
+.education-container > * {
+	flex: 1 1 160px;
+}
+
+.education-logo {
+	display: flex;
+	justify-content: center;
+}
+
+/* Vertical Timeline */
+.container {
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: 550px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 2rem;
+	/* box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5); */
+	/* border-radius: 2rem; */
+}
+
+.rightbox {
+	width: 100%;
+}
+
+.rb-container {
+	width: 60%;
+	margin: auto;
+	display: block;
+	position: relative;
+}
+
+.rb-container ul.rb {
+	margin: 2.5em 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.rb-container ul.rb li {
+	list-style: none;
+	margin: auto;
+	min-height: 50px;
+	border-left: 1px dashed #fff;
+	padding: 0 0 50px 30px;
+	position: relative;
+}
+
+.rb-container ul.rb li:last-child {
+	border-left: 0;
+}
+
+.rb-container ul.rb li::before {
+	position: absolute;
+	left: -18px;
+	top: -5px;
+	content: ' ';
+	border: 8px solid rgba(255, 255, 255, 1);
+	border-radius: 500%;
+	background: #50d890;
+	height: 20px;
+	width: 20px;
+	transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+	border-color: #232931;
+	transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+	color: #21bd02;
+	position: relative;
+	width: 100px;
+	font-size: 12px;
+}
+
+.item-title {
+	color: #121212;
+	font-size: 0.8rem;
 }
 
 /* responsiveness section */
@@ -195,5 +376,18 @@ img.hero-img {
 
 	.about {
 		align-items: center;
+	}
+
+	.education {
+		padding: 1rem 3rem;
+	}
+
+	.education-container {
+		gap: 3rem;
+	}
+
+	.container {
+		width: 300px;
+		height: fit-content;
 	}
 }

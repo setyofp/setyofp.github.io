@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+		/>
 		<title>Setyo F P | Front-end Web Developer</title>
 	</head>
 	<body>
@@ -13,7 +17,7 @@
 				<a href="#" class="nav-logo">setyofp.</a>
 				<ul class="nav-menu">
 					<li class="nav-item">
-						<a href="#" class="nav-link">Education</a>
+						<a href="#education" class="nav-link">Education</a>
 					</li>
 					<li class="nav-item">
 						<a href="#" class="nav-link">Skill</a>
@@ -39,27 +43,32 @@
 					<p>Front-end Web Developer</p>
 				</div>
 				<div class="about-link">
-					<div class="social-logo">
-						<a href="#" class="social-link"
-							><img
-								src="./assets/img/icons8-gmail-24.png"
-								alt="gmail icon"
-						/></a>
-					</div>
-					<div class="social-logo">
-						<a href="#" class="social-link"
-							><img
-								src="./assets/img/icons8-linkedin-24.png"
-								alt="linkedin icon"
-						/></a>
-					</div>
-					<div class="social-logo">
-						<a href="#" class="social-link"
-							><img
-								src="./assets/img/icons8-github-24.png"
-								alt="github-icon"
-						/></a>
-					</div>
+					<ul class="icon-list">
+						<li class="icon-item">
+							<a
+								href="mailto: setyofajar@gmail.com"
+								target="_blank"
+								class="icon-link"
+								><i class="far fa-envelope"></i
+							></a>
+						</li>
+						<li class="icon-item">
+							<a
+								href="https://github.com/setyofp"
+								target="_blank"
+								class="icon-link"
+								><i class="fab fa-github"></i
+							></a>
+						</li>
+						<li class="icon-item">
+							<a
+								href="https://www.linkedin.com/in/setyofajar/"
+								target="_blank"
+								class="icon-link"
+								><i class="fab fa-linkedin-in"></i
+							></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<aside>
@@ -69,6 +78,109 @@
 					alt="Setyo Fajar Pratomo Photos"
 				/>
 			</aside>
+		</section>
+		<section class="education" id="education">
+			<div class="section-title">
+				<h1>Education</h1>
+			</div>
+			<div class="education-container">
+				<div class="education-formal">
+					<div class="education-logo">
+						<img
+							src="./assets/img/icons8-education-48.png"
+							alt="formal education"
+							style="height: 24px"
+						/>
+					</div>
+					<div class="container">
+						<div class="rightbox">
+							<div class="rb-container">
+								<ul class="rb">
+									<li class="rb-item" ng-repeat="itembx">
+										<div class="timestamp">2017 - 2021</div>
+										<div class="item-title">
+											<h2>Brawijaya University</h2>
+											<p>Electrical Engineering</p>
+										</div>
+									</li>
+									<li class="rb-item" ng-repeat="itembx">
+										<div class="timestamp">2013 - 2016</div>
+										<div class="item-title">
+											<h2>SMAN 8 Bekasi</h2>
+											<p>Natural Science</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="education-formal">
+					<div class="education-logo">
+						<img
+							src="./assets/img/icons8-code-24.png"
+							alt="bootcamp"
+						/>
+					</div>
+					<div class="container">
+						<div class="rightbox">
+							<div class="rb-container">
+								<ul class="rb">
+									<li class="rb-item" ng-repeat="itembx">
+										<div class="timestamp">
+											7th May -<br />
+											28th Jul 2021
+										</div>
+										<div class="item-title">
+											<h2>
+												Indosat Ooredoo Digital Camp
+											</h2>
+											<p>
+												Front-End Web Developer -
+												Dicoding
+											</p>
+										</div>
+									</li>
+									<li class="rb-item" ng-repeat="itembx">
+										<div class="timestamp">
+											31st May -<br />
+											9th Jul 2021
+										</div>
+										<div class="item-title">
+											<h2>
+												Digital Talent Scholarship
+												(Digitalent)
+											</h2>
+											<p>
+												Intro to Full Stack Developer -
+												Progate
+											</p>
+										</div>
+									</li>
+
+									<li class="rb-item" ng-repeat="itembx">
+										<div class="timestamp">
+											15th Mar -<br />
+											10th Jun 2021
+										</div>
+										<div class="item-title">
+											<h2>
+												Cloud and Back-End Developer
+												Scholarship Program
+											</h2>
+											<p>
+												Cloud Practitioner Essentials
+												<br />
+												Architecting on AWS
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<script src="./script.js"></script>
 	</body>
