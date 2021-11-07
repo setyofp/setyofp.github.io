@@ -66,7 +66,7 @@ button {
 	color: #482ff7;
 }
 
-.contact-btn {
+button.nav-link {
 	display: inline-block;
 	text-transform: uppercase;
 	background: #121212;
@@ -79,10 +79,49 @@ button {
 	position: relative;
 }
 
-.contact-btn:hover {
+button.nav-link:hover {
 	background: #000;
 	transition: all 0.3s;
 	color: #fff;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap-reverse;
+	align-items: center;
+	padding: 1rem 10rem;
+	height: 400px;
+}
+
+.hero > * {
+	flex: 1 1 160px;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.about-name h1 {
+	font-size: 3rem;
+}
+
+.about-link {
+	display: flex;
+	gap: 1rem;
+}
+
+.social-logo {
+	background-color: #d7d7d7;
+	padding: 0.5rem;
+	border-radius: 1rem;
+}
+
+img.hero-img {
+	max-width: 400px;
+	border-radius: 1rem;
 }
 
 /* responsiveness section */
@@ -113,7 +152,7 @@ button {
 		margin: 2.5rem 0;
 	}
 
-	.contact-btn {
+	button.nav-link {
 		background: none;
 		border: none;
 		color: #121212;
@@ -121,7 +160,7 @@ button {
 		font-size: 1rem;
 	}
 
-	.contact-btn:hover {
+	button.nav-link:hover {
 		background: none;
 		transition: all 0.3s;
 		color: #121212;
@@ -142,5 +181,19 @@ button {
 
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.hero {
+		padding: 1rem 3rem;
+		text-align: center;
+		height: 600px;
+	}
+
+	img.hero-img {
+		max-width: 300px;
+	}
+
+	.about {
+		align-items: center;
 	}
 }
