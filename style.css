@@ -315,8 +315,12 @@ ul.rb li .timestamp {
 	.nav-menu {
 		position: fixed;
 		right: -100%;
-		top: 4rem;
+		top: 0;
+		height: 100%;
+		z-index: 2;
 		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
 		background-color: #d7d7d7;
 		width: 100%;
 		border-radius: 1rem;
@@ -350,6 +354,7 @@ ul.rb li .timestamp {
 	.hamburger {
 		display: block;
 		cursor: pointer;
+		z-index: 3;
 	}
 
 	.hamburger.active .bar:nth-child(2) {
@@ -357,11 +362,13 @@ ul.rb li .timestamp {
 	}
 
 	.hamburger.active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
+		transform: translateY(7px) rotate(45deg);
+		position: fixed;
 	}
 
 	.hamburger.active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
+		transform: translateY(-7px) rotate(-45deg);
+		position: fixed;
 	}
 
 	.hero {
