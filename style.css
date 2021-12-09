@@ -313,7 +313,7 @@ ul.rb li .timestamp {
 /* Skill Section */
 .skill {
 	padding: 1rem 10rem;
-	margin-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 
 .skill-list {
@@ -339,8 +339,7 @@ ul.rb li .timestamp {
 .skill-item:hover {
 	background-color: #a1a1a1;
 	box-shadow: 1.7px 1.7px 5.3px rgba(0, 0, 0, 0.044),
-		5.6px 5.6px 17.9px rgba(0, 0, 0, 0.066),
-		25px 25px 80px rgba(0, 0, 0, 0.11);
+		5.6px 5.6px 17.9px rgba(0, 0, 0, 0.066), 25px 25px 80px rgba(0, 0, 0, 0.11);
 	transform: scale(1.1);
 }
 
@@ -352,9 +351,69 @@ figcaption {
 	font-size: 4rem;
 }
 
+.card-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.portfolio-card {
+	background-color: #d7d7d7;
+	box-shadow: 1.7px 1.7px 5.3px rgba(0, 0, 0, 0.044),
+		5.6px 5.6px 17.9px rgba(0, 0, 0, 0.066), 25px 25px 80px rgba(0, 0, 0, 0.11);
+
+	width: 60vw;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 1rem;
+}
+
+.portfolio-img {
+	display: flex;
+	flex: 0 1 calc(50%);
+	max-width: 400px;
+}
+
+.portfolio-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1.5rem 0;
+	align-items: center;
+	flex: 0 1 calc(50%);
+}
+
+.portfolio-img img {
+	max-width: 100%;
+	border-radius: 1rem 0 0 1rem;
+}
+
+.tech-icon {
+	margin: 0 0.5rem;
+}
+
+.tech-icon i {
+	font-size: 2rem;
+}
+
+.tech-icon img {
+	width: 2rem;
+}
+
+.tech-stack ul {
+	display: flex;
+}
+
+.portfolio {
+	padding: 3rem 0;
+	background-color: #d7d7d7;
+	border-radius: 2rem 2rem 0 0;
+}
+
 footer {
 	text-align: center;
-	margin-bottom: 2rem;
+	padding: 2rem 0;
+	background-color: #d7d7d7;
 }
 
 /* responsiveness section */
@@ -452,5 +511,31 @@ footer {
 
 	.skill {
 		padding: 1rem 3rem;
+	}
+
+	.portfolio-card {
+		flex-direction: column;
+	}
+
+	.portfolio-img img {
+		max-width: 100%;
+		border-radius: 1rem 1rem 0 0;
+	}
+
+	.portfolio-desc > * {
+		margin: 0.5rem 0;
+	}
+
+	.portfolio-desc a > button.nav-link {
+		display: inline-block;
+		text-transform: uppercase;
+		background: #121212;
+		color: #fff;
+		cursor: pointer;
+		padding: 1rem;
+		border: 0;
+		transition: all 0.3s;
+		border-radius: 0.5rem;
+		position: relative;
 	}
 }
